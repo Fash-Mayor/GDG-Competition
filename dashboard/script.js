@@ -8,5 +8,5 @@ if (username) {
 // Handle logout
 document.getElementById('logoutButton').addEventListener('click', function() {
     localStorage.removeItem('loggedInUser'); 
-    window.location.href = '../signinsignup/index.html';
+    window.location.href = '../index.html';
 });
