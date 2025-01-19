@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Sign In / Sign Up</title>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+	<link rel="stylesheet" href="./style.css">
+	<style>
+		.form-signup{
+		   /* display: none;*/
+		    position: relative;
+			z-index: 1;
+		    padding-bottom: 4.5rem;
+		    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+		}
+
+		.hidden{
+		    display: none;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="login-container">
+		<!--Sign In-->
+		<form action="" class="form-login" id="form-login">
+			<ul class="login-nav">
+				<li class="login-nav__item active">
+					<a href="#">Sign In</a>
+				</li>
+				<li class="login-nav__item" id="sign-up">
+					<a href="#">Sign Up</a>
+				</li>
+			</ul>
+			<label for="login-input-user" class="login__label">
+				Username
+			</label>
+			<input id="login-input-user" class="login__input" type="text" />
+			<label for="login-input-password" class="login__label">
+				Password
+			</label>
+			<input id="login-input-password" class="login__input" type="password" />
+			<label for="login-sign-up" class="login__label--checkbox">
+				<input id="login-sign-up" type="checkbox" class="login__input--checkbox" />
+				Keep me Signed in
+			</label>
+			<button type="submit" class="login__submit">Sign in</button>
+		</form>
+		<a href="#" class="login__forgot">Forgot Password?</a>
+
+		<!--Sign Up-->
+		<form action="" class="form-signup hidden">
+			<ul class="login-nav">
+				<li class="login-nav__item" id="sign-in">
+					<a href="#">Sign In</a>
+				</li>
+				<li class="login-nav__item active">
+					<a href="#">Sign Up</a>
+				</li>
+			</ul>
+			<label for="login-input-user" class="login__label">
+				Username
+			</label>
+			<input id="login-input-user" class="login__input" type="text" />
+
+			<label for="login-input-email" class="login__label">
+				Email
+			</label>
+			<input id="login-input-email" class="login__input" type="email" />
+
+			<label for="login-input-password" class="login__label">
+				Password
+			</label>
+			<input id="login-input-password" class="login__input" type="password" />
+			<label for="login-input-password" class="login__label">
+				Enter Password Again
+			</label>
+			<input id="login-input-password" class="login__input" type="password" />
+			<label for="login-sign-up" class="login__label--checkbox">
+				<input id="login-sign-up" type="checkbox" class="login__input--checkbox" />
+				Keep me Signed in
+			</label>
+			<button type="submit" class="login__submit">Sign up</button>
+		</form>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
