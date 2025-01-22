@@ -24,5 +24,5 @@ document.querySelector("#form-login").addEventListener('submit', function(event)
 
     localStorage.setItem('loggedInUser', username);
 
-    window.location.href = 'dashboard/login.html';
+    window.location.href = 'dashboard/dashboard.html';
 });
