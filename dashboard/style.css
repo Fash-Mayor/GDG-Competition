@@ -174,10 +174,6 @@ a:active {
   border-radius: 0 0 20px 20px;
 }
 
-.more button{
-  text-decoration: underline;
-}
-
 .open-icon {
   font-size: 1.25rem;
   color: #000;
