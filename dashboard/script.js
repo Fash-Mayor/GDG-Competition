@@ -1,7 +1,7 @@
 const username = localStorage.getItem('loggedInUser');
 
 if (username) {
-    document.getElementById('welcomeMessage').innerText = `Welcome, ${username}!`;
+    document.getElementById('welcomeMessage').innerText = `Welcome To BLUE, ${username}`;
 } else {
     window.location.href = '../signinsignup/index.html';
 }
