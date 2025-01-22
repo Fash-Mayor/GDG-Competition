@@ -68,39 +68,120 @@
     </ul>
   </nav>
 
+  <div class="scroll">
+		<p>Hey BLUE!</p>
+	</div>
+
   <section>
     <p id="welcomeMessage" class="welcome-text welcome-text__animation"></p>
   </section>
 
-  <main class="container">
-    <div class="card">
-      <img src="./card-img-1.jpg" alt="image" />
 
-      <div class="card-content">
-        <p>Blue Sky</p>
-        <p>When we use the term ‘blue sky’ to describe higher thinking, we are relating it to this endless color above us.</p>
+  <main id="content">
+    <!-- Cards -->
+    <div class="card">
+      <img class="card-img" src="./card-img-1.jpg" />
+      <div class="title">
+        <h2>Blue Sky</h2>
+      </div>
+      <div class="more">
+        <button class="modal-open" data-modal="modal1">
+          more<ion-icon class="open-icon" name="open-outline" aria-hidden="true"></ion-icon>
+        </button>
       </div>
     </div>
 
     <div class="card">
-      <img src="./card-img-2.jpg" alt="image" />
-
-      <div class="card-content">
-        <p>Blue in Foods</p>
-        <p>The color blue is rarely found in foods because it lacks a chemical compound that makes them blue.</p>
+      <img class="card-img" src="./card-img-2.jpg" />
+      <div class="title">
+        <h2>Blue in Food</h2>
+      </div>
+      <div class="more">
+        <button class="modal-open" data-modal="modal2">
+          more<ion-icon class="open-icon" name="open-outline" aria-hidden="true"></ion-icon>
+        </button>
       </div>
     </div>
 
     <div class="card">
-      <img src="./card-img-3.jpg" alt="image" />
-
-      <div class="card-content">
-        <p>Blue is Calming</p>
-        <p>Blue is the color of relaxation. It has really never been unpopular but more recently, it is more trendy in home decor and fashion.</p>
+      <img class="card-img" src="./card-img-3.jpg" />
+      <div class="title">
+        <h2>Blue is Calming</h2>
+      </div>
+      <div class="more">
+        <button class="modal-open" data-modal="modal3">
+          more<ion-icon class="open-icon" name="open-outline" aria-hidden="true"></ion-icon>
+        </button>
       </div>
     </div>
   </main>
 
+  <!--Modals-->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <div class="modal-header">
+        Blue Sky<button class="modal-close">
+          <ion-icon class="close-icon" name="close-outline">Close</ion-icon>
+        </button>
+      </div>
+      <div class="modal-body modal-one">
+        <img src="./card-img-1.jpg" alt="" />
+        <ul>
+          <li>
+            When we use the term ‘blue sky’ to describe higher thinking,
+            we are relating it to this endless color above us.
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="button close-btn modal-close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <div class="modal-header">
+        Blue in Food<button class="modal-close">
+          <ion-icon class="close-icon" name="close-outline">Close</ion-icon>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="./card-img-2.jpg" alt="" />
+        <ul>
+          <li>
+            The color blue is rarely found in foods because it lacks a chemical compound that makes them blue.
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="button close-btn modal-close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <div class="modal-header">
+        Blue is Calming
+        <button class="modal-close">
+          <ion-icon class="close-icon" name="close-outline">Close</ion-icon>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="./card-img-3.jpg" alt="" />
+        <ul>
+          <li>
+            Blue is the color of relaxation. It has really never been unpopular but more recently, it is more trendy in
+            home decor and fashion.
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="button close-btn modal-close">Close</button>
+      </div>
+    </div>
+  </div>
   <script src="./script.js"></script>
 </body>
 
